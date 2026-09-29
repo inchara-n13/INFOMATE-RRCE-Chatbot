@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOMATE – RRCE Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <div class="bot-icon">🤖</div>
+        <div>
+            <h1>INFOMATE</h1>
+            <p>RRCE College Information Assistant</p>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="chat-controls">
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="kn">ಕನ್ನಡ</option>
+        </select>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Suggested Questions -->
+    <div class="suggestions">
+        <button onclick="askQuestion('What courses are available?')">
+            📚 Courses
+        </button>
+
+        <button onclick="askQuestion('What are the fees?')">
+            💰 Fees
+        </button>
+
+        <button onclick="askQuestion('Tell me about hostel')">
+            🏠 Hostel
+        </button>
+
+        <button onclick="askQuestion('Tell me about placements')">
+            🎓 Placements
+        </button>
+
+        <button onclick="askQuestion('Tell me about the library')">
+            📖 Library
+        </button>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask INFOMATE something..."
+            autocomplete="off"
+        />
+
+        <button onclick="sendMessage()" class="send-button">
+            ➤
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="chat-footer">
+        INFOMATE • RRCE College Information Assistant
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
